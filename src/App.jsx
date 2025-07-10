@@ -1,15 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import UserContextprovider from './context/UserContextProvider'
+import Login from './components/Login'
+import Profile from './components/Profile'
 
 function App() {
- 
-
   return (
-    <div>
-      <h1 className='text-bold underline n-24'>Use Context</h1>
-    </div>
+    <UserContextprovider>
+      <h1> Hello Mittrroo</h1>
+
+      <Login />
+      <Profile />
+
+    </UserContextprovider>
   )
 }
 
